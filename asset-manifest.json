@@ -1,0 +1,15 @@
+{
+  "main.css": "/contact-book/static/css/main.11d832ee.chunk.css",
+  "main.js": "/contact-book/static/js/main.4185036c.chunk.js",
+  "main.js.map": "/contact-book/static/js/main.4185036c.chunk.js.map",
+  "runtime~main.js": "/contact-book/static/js/runtime~main.857aea94.js",
+  "runtime~main.js.map": "/contact-book/static/js/runtime~main.857aea94.js.map",
+  "static/css/2.d2c7de2b.chunk.css": "/contact-book/static/css/2.d2c7de2b.chunk.css",
+  "static/js/2.58e3aff9.chunk.js": "/contact-book/static/js/2.58e3aff9.chunk.js",
+  "static/js/2.58e3aff9.chunk.js.map": "/contact-book/static/js/2.58e3aff9.chunk.js.map",
+  "index.html": "/contact-book/index.html",
+  "precache-manifest.4c4f3519f083523764c12c5e59be5278.js": "/contact-book/precache-manifest.4c4f3519f083523764c12c5e59be5278.js",
+  "service-worker.js": "/contact-book/service-worker.js",
+  "static/css/2.d2c7de2b.chunk.css.map": "/contact-book/static/css/2.d2c7de2b.chunk.css.map",
+  "static/css/main.11d832ee.chunk.css.map": "/contact-book/static/css/main.11d832ee.chunk.css.map"
+}
