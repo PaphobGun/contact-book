@@ -11,12 +11,22 @@ class Person extends Component {
   };
 
   render() {
-    const { firstName, lastName, email, phone, id } = this.props.person;
+    const {
+      firstName,
+      lastName,
+      email,
+      phone,
+      id,
+      userDetails
+    } = this.props.person;
 
     return (
       <div className="card mb-4">
         <div className="card-header clearfix">
           <h4 className="text-secondary">{firstName}</h4>
+          <small className="text-secondary">
+            Added by {userDetails.firstName} {userDetails.lastName}
+          </small>
         </div>
         <div className="card-body text-secondary">
           <p>First Name: {firstName}</p>
