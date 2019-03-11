@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import store from '../store';
 import Navbar from './layout/Navbar';
 import Persons from './persons/Persons';
@@ -15,14 +15,30 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <div>
             <Navbar />
             <Switch>
-              <Route exact path="/" component={Persons} />
-              <Route exact path="/persons/add" component={AddPerson} />
-              <Route exact path="/persons/edit/:id" component={EditPerson} />
-              <Route exact path="/about" component={About} />
+              <Route
+                exact
+                path={process.env.PUBLIC_URL + '/'}
+                component={Persons}
+              />
+              <Route
+                exact
+                path={process.env.PUBLIC_URL + '/persons/add'}
+                component={AddPerson}
+              />
+              <Route
+                exact
+                path={process.env.PUBLIC_URL + '/persons/edit/:id'}
+                component={EditPerson}
+              />
+              <Route
+                exact
+                path={process.env.PUBLIC_URL + '/about'}
+                component={About}
+              />
               <Route component={NotFound} />
             </Switch>
           </div>
