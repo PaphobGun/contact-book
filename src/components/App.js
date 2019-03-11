@@ -19,26 +19,10 @@ class App extends Component {
           <div>
             <Navbar />
             <Switch>
-              <Route
-                exact
-                path={process.env.PUBLIC_URL + '/'}
-                component={Persons}
-              />
-              <Route
-                exact
-                path={process.env.PUBLIC_URL + '/persons/add'}
-                component={AddPerson}
-              />
-              <Route
-                exact
-                path={process.env.PUBLIC_URL + '/persons/edit/:id'}
-                component={EditPerson}
-              />
-              <Route
-                exact
-                path={process.env.PUBLIC_URL + '/about'}
-                component={About}
-              />
+              <Route exact path="/" component={Persons} />
+              <Route exact path="/persons/add" component={AddPerson} />
+              <Route exact path="/persons/edit/:id" component={EditPerson} />
+              <Route exact path="/about" component={About} />
               <Route component={NotFound} />
             </Switch>
           </div>
