@@ -1,15 +1,15 @@
 {
-  "main.css": "/contact-book/static/css/main.11d832ee.chunk.css",
-  "main.js": "/contact-book/static/js/main.1cdb15e2.chunk.js",
-  "main.js.map": "/contact-book/static/js/main.1cdb15e2.chunk.js.map",
+  "main.css": "/contact-book/static/css/main.13d22938.chunk.css",
+  "main.js": "/contact-book/static/js/main.8236a3d6.chunk.js",
+  "main.js.map": "/contact-book/static/js/main.8236a3d6.chunk.js.map",
   "runtime~main.js": "/contact-book/static/js/runtime~main.857aea94.js",
   "runtime~main.js.map": "/contact-book/static/js/runtime~main.857aea94.js.map",
   "static/css/2.d2c7de2b.chunk.css": "/contact-book/static/css/2.d2c7de2b.chunk.css",
-  "static/js/2.801921ee.chunk.js": "/contact-book/static/js/2.801921ee.chunk.js",
-  "static/js/2.801921ee.chunk.js.map": "/contact-book/static/js/2.801921ee.chunk.js.map",
+  "static/js/2.0053af11.chunk.js": "/contact-book/static/js/2.0053af11.chunk.js",
+  "static/js/2.0053af11.chunk.js.map": "/contact-book/static/js/2.0053af11.chunk.js.map",
   "index.html": "/contact-book/index.html",
-  "precache-manifest.087a3d47e90cc1a7d50f7b600d44edcf.js": "/contact-book/precache-manifest.087a3d47e90cc1a7d50f7b600d44edcf.js",
+  "precache-manifest.a601955881c70703695e4fa24327c386.js": "/contact-book/precache-manifest.a601955881c70703695e4fa24327c386.js",
   "service-worker.js": "/contact-book/service-worker.js",
   "static/css/2.d2c7de2b.chunk.css.map": "/contact-book/static/css/2.d2c7de2b.chunk.css.map",
-  "static/css/main.11d832ee.chunk.css.map": "/contact-book/static/css/main.11d832ee.chunk.css.map"
+  "static/css/main.13d22938.chunk.css.map": "/contact-book/static/css/main.13d22938.chunk.css.map"
 }
