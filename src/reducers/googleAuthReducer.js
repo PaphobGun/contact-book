@@ -2,7 +2,7 @@ import { SIGN_IN, SIGN_OUT } from '../actions/types';
 
 const initialState = {
   isSignedIn: null,
-  userDetails: null
+  userDetails: 'null'
 };
 
 export default (state = initialState, action) => {
@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         isSignedIn: false,
-        userDetails: null
+        userDetails: 'null'
       };
     default:
       return state;

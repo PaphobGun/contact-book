@@ -1,0 +1,12 @@
+.header {
+  padding-top: 2.5rem;
+  padding-bottom: 0.35rem;
+  width: 100%;
+}
+
+/* If screen width is less than 36em ( 576/16 px) */
+@media only screen and (max-width: 36em) {
+  .mb-resp {
+    margin-bottom: 0.5rem;
+  }
+}

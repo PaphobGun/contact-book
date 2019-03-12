@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import { fetchPerson, editPerson } from '../../actions/personActions';
 import AddForm from '../layout/AddForm';
 
@@ -63,7 +64,10 @@ class EditPerson extends Component {
       firstName,
       lastName,
       email,
-      phone
+      phone,
+      userFirstName: this.props.auth.firstName,
+      userLastName: this.props.auth.lastName,
+      userId: this.props.auth.userId
     };
 
     // Call action creator
@@ -83,6 +87,9 @@ class EditPerson extends Component {
   };
 
   render() {
+    // If not signed In redirect to main page
+    if (!this.props.isSignedIn) return <Redirect to="/" />;
+
     return (
       <div className="container my-5">
         <div className="card">
@@ -104,7 +111,9 @@ class EditPerson extends Component {
 
 const mapStateToProps = state => {
   return {
-    person: state.person.person
+    auth: state.auth.userDetails,
+    person: state.person.person,
+    isSignedIn: state.auth.isSignedIn
   };
 };
 

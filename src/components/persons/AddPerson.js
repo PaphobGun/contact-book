@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import { addPerson } from '../../actions/personActions';
 import AddForm from '../layout/AddForm';
 
@@ -71,6 +72,11 @@ class AddPerson extends Component {
   };
 
   render() {
+    //if not signed in rediect to main page
+    if (!this.props.isSignedIn) {
+      return <Redirect to="/" />;
+    }
+
     return (
       <div className="container my-5">
         <div className="card">
@@ -92,7 +98,8 @@ class AddPerson extends Component {
 
 const mapStateToProps = state => {
   return {
-    auth: state.auth.userDetails
+    auth: state.auth.userDetails,
+    isSignedIn: state.auth.isSignedIn
   };
 };
 

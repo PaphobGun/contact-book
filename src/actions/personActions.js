@@ -33,11 +33,10 @@ export const fetchPerson = id => async dispatch => {
 };
 
 // Make a post request to add new person into db
-export const addPerson = person => async (dispatch, getState) => {
-  const { userDetails } = getState().auth;
+export const addPerson = person => async dispatch => {
   const res = await axios.post(
     'https://server-contactbook.herokuapp.com/persons/',
-    { ...person, userDetails }
+    person
   );
 
   dispatch({
