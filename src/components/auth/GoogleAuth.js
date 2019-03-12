@@ -34,18 +34,19 @@ class GoogleAuth extends Component {
   // to check that is user signed in or not
   onAuthChange = isSignedIn => {
     const { signIn, signOut } = this.props;
-    const userId = this.auth.currentUser.get().getId();
-    const firstName = this.auth.currentUser.get().getBasicProfile().ofa;
-    const lastName = this.auth.currentUser.get().getBasicProfile().wea;
 
-    const currentUser = {
-      userId,
-      firstName,
-      lastName
-    };
     // call action creator signIn to set 'isSignedIn in redux store to be true'
     // and pass the id, first name, last name of current user as an arguement as well
     if (isSignedIn) {
+      const userId = this.auth.currentUser.get().getId();
+      const firstName = this.auth.currentUser.get().getBasicProfile().ofa;
+      const lastName = this.auth.currentUser.get().getBasicProfile().wea;
+
+      const currentUser = {
+        userId,
+        firstName,
+        lastName
+      };
       signIn(currentUser);
       // call action creator signOut to set 'isSignedIn in redux store to be false'
     } else {

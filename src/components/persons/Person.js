@@ -17,7 +17,9 @@ class Person extends Component {
       email,
       phone,
       id,
-      userDetails
+      userFirstName,
+      userLastName,
+      userId
     } = this.props.person;
 
     return (
@@ -25,7 +27,7 @@ class Person extends Component {
         <div className="card-header clearfix">
           <h4 className="text-secondary">{firstName}</h4>
           <small className="text-secondary">
-            Added by {userDetails.firstName} {userDetails.lastName}
+            Added by {userFirstName} {userLastName}
           </small>
         </div>
         <div className="card-body text-secondary">

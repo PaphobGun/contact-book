@@ -48,7 +48,10 @@ class AddPerson extends Component {
       firstName,
       lastName,
       email,
-      phone
+      phone,
+      userFirstName: this.props.auth.firstName,
+      userLastName: this.props.auth.lastName,
+      userId: this.props.auth.userId
     };
 
     // Call action creator
@@ -87,7 +90,13 @@ class AddPerson extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    auth: state.auth.userDetails
+  };
+};
+
 export default connect(
-  null,
+  mapStateToProps,
   { addPerson }
 )(AddPerson);
