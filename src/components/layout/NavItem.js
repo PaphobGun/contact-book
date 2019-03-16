@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 // Navitem
 const NavItem = props => {
@@ -12,6 +13,12 @@ const NavItem = props => {
       </Link>
     </li>
   );
+};
+
+NavItem.propTypes = {
+  icon: PropTypes.string,
+  text: PropTypes.string,
+  path: PropTypes.string
 };
 
 export default NavItem;

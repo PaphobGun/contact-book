@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { fetchPerson, editPerson } from '../../actions/personActions';
+import PropTypes from 'prop-types';
+
 import AddForm from '../layout/AddForm';
 
 // Edit person
@@ -93,8 +95,8 @@ class EditPerson extends Component {
     return (
       <div className="container my-5">
         <div className="card">
-          <div className="card-header">
-            <h3 className="text-secondary">Edit Information</h3>
+          <div className="card-header bg-danger">
+            <h3 className="text-white">Edit Information</h3>
           </div>
           <div className="card-body">
             <AddForm
@@ -108,6 +110,11 @@ class EditPerson extends Component {
     );
   }
 }
+
+EditPerson.propTypes = {
+  person: PropTypes.object,
+  isSignedIn: PropTypes.bool
+};
 
 const mapStateToProps = state => {
   return {

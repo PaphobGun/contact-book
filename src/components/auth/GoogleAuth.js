@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { signIn, signOut } from '../../actions/googleAuthActions';
+import PropTypes from 'prop-types';
 
 // from OAuth google
 // here is documentation
@@ -90,6 +91,10 @@ class GoogleAuth extends Component {
     return <div>{this.renderGoogleButton()}</div>;
   }
 }
+
+GoogleAuth.propTypes = {
+  isSignedIn: PropTypes.bool
+};
 
 const mapStateToProps = state => {
   return {
