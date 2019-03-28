@@ -1,0 +1,65 @@
+.welcome {
+  //For support old browsers
+  height: 100vh;
+  // minus with navbar's height
+  height: calc(100vh - 90px);
+  background: url(../img/bg-welcome.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+
+    &--btn {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      padding: 1rem 2.7rem;
+      margin-top: 2rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.25s ease;
+
+      @media only screen and (max-width: 600px) {
+        padding: 0.5rem 1.35rem;
+      }
+    }
+
+    &--btn:hover {
+      text-decoration: none;
+      color: #fff;
+      opacity: 0.8;
+      transform: translateY(-0.5rem);
+    }
+
+    .about {
+      background: $danger;
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 7rem;
+    color: #fff;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  h3 {
+    color: #fff;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+}

@@ -1,8 +1,10 @@
-.header {
-  padding-top: 2.5rem;
-  padding-bottom: 0.35rem;
-  width: 100%;
+.navbar {
+  height: 90px;
 }
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import './header';
+@import './welcome';
 
 /* If screen width is less than 36em ( 576/16 px) */
 @media only screen and (max-width: 36em) {

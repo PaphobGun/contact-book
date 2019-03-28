@@ -21,7 +21,7 @@ const renderMenu = (firstName, lastName, isSignedIn) => {
 
         <div className="collapse navbar-collapse" id="navbarMain">
           <ul className="navbar-nav mr-auto">
-            <NavItem icon="fas fa-home" text="Home" path="/" />
+            <NavItem icon="fas fa-home" text="Home" path="/persons" />
             <NavItem
               icon="fas fa-plus-square"
               text="Add Contact"

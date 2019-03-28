@@ -13,10 +13,13 @@ const About = () => {
               </h5>
             </div>
             <div className="card-body">
-              In order to add new contact you have to sign in with google
-              account, and then you will see the "Add Contact" menu from the
-              navbar. You can edit and delete the contact that added by yourself
-              only ,You can not edit or delete the one that added by others.
+              In order to add new contact you have to{' '}
+              <span className="text-danger">sign in with google account</span>,
+              and then you will see the "Add Contact" menu from the navbar.You
+              can edit and delete the contact that added by yourself only ,
+              <span className="text-danger">
+                You can not edit or delete the one that added by others.
+              </span>
             </div>
           </div>
         </div>
@@ -40,7 +43,7 @@ const About = () => {
             <div className="card-footer">
               <a
                 href="https://github.com/PaphobGun/contact-book"
-                className="btn btn-primary"
+                className="btn btn-dark"
                 target="_blank"
                 rel="noopener noreferrer"
               >

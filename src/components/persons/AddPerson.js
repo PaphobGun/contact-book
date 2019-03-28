@@ -81,16 +81,20 @@ class AddPerson extends Component {
 
     return (
       <div className="container my-5">
-        <div className="card">
-          <div className="card-header bg-danger">
-            <h3 className="text-white">Add New Person</h3>
-          </div>
-          <div className="card-body">
-            <AddForm
-              parentState={this.state}
-              onChange={this.onChange}
-              onSubmit={this.onSubmit}
-            />
+        <div className="row">
+          <div className="col-md-8 mx-auto">
+            <div className="card">
+              <div className="card-header bg-danger">
+                <h3 className="text-white">Add New Person</h3>
+              </div>
+              <div className="card-body">
+                <AddForm
+                  parentState={this.state}
+                  onChange={this.onChange}
+                  onSubmit={this.onSubmit}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

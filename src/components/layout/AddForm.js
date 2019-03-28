@@ -49,6 +49,11 @@ const AddForm = props => {
         type="submit"
         value="Submit"
         className="btn btn-danger btn-block"
+        style={{
+          textTransform: 'uppercase',
+          fontWeight: '600',
+          fontSize: '1.2rem'
+        }}
       />
     </form>
   );

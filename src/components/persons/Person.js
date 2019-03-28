@@ -15,15 +15,17 @@ const renderButtonEditAndDelete = (userId, id, currentUserId, delPerson) => {
   if (userId === currentUserId) {
     return (
       <div className="card-footer">
-        <Link className="btn btn-info" to={`/persons/edit/${id}`}>
-          Edit
-        </Link>
-        <button
-          className="ml-2 btn btn-danger"
-          onClick={() => deletePerson(id, delPerson)}
-        >
-          Delete
-        </button>
+        <div className="btn-group">
+          <Link className="btn btn-info" to={`/persons/edit/${id}`}>
+            Edit
+          </Link>
+          <button
+            className="btn btn-danger"
+            onClick={() => deletePerson(id, delPerson)}
+          >
+            Delete
+          </button>
+        </div>
       </div>
     );
   }
@@ -46,7 +48,7 @@ const Person = props => {
 
   return (
     <div className="row">
-      <div className="col-lg-9 mx-auto">
+      <div className="col-md-8 mx-auto">
         <div className="card mb-4">
           <div className="card-header bg-danger clearfix">
             <h4 className="text-white">{firstName}</h4>
