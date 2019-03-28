@@ -1,5 +1,5 @@
 {
-  "main.css": "/contact-book/static/css/main.a096c7ea.chunk.css",
+  "main.css": "/contact-book/static/css/main.4a58ee75.chunk.css",
   "main.js": "/contact-book/static/js/main.4f95c348.chunk.js",
   "main.js.map": "/contact-book/static/js/main.4f95c348.chunk.js.map",
   "runtime~main.js": "/contact-book/static/js/runtime~main.857aea94.js",
@@ -8,9 +8,9 @@
   "static/js/2.8d72dd98.chunk.js": "/contact-book/static/js/2.8d72dd98.chunk.js",
   "static/js/2.8d72dd98.chunk.js.map": "/contact-book/static/js/2.8d72dd98.chunk.js.map",
   "index.html": "/contact-book/index.html",
-  "precache-manifest.c5d1a62223f2290ea6ed1cc3ea12274b.js": "/contact-book/precache-manifest.c5d1a62223f2290ea6ed1cc3ea12274b.js",
+  "precache-manifest.abd34e0ee50506a317b54e8637499e99.js": "/contact-book/precache-manifest.abd34e0ee50506a317b54e8637499e99.js",
   "service-worker.js": "/contact-book/service-worker.js",
   "static/css/2.d2c7de2b.chunk.css.map": "/contact-book/static/css/2.d2c7de2b.chunk.css.map",
-  "static/css/main.a096c7ea.chunk.css.map": "/contact-book/static/css/main.a096c7ea.chunk.css.map",
+  "static/css/main.4a58ee75.chunk.css.map": "/contact-book/static/css/main.4a58ee75.chunk.css.map",
   "static/media/App.scss": "/contact-book/static/media/bg-welcome.72687b56.jpg"
 }
